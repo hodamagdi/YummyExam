@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <!-- web icon  -->
+    <link rel="icon" href="imgs/logo.png">
+    <!-- web fonts  -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <!-- start sideNav section -->
+    <section id="sideNavBar">
+        <div class="side-nav d-flex flex-column justify-content-between">
+            <div class="navAnchor">
+                <ul class="py-4 pe-2 overflow-hidden">
+                    <li class="position-relative"><a id="search" class="sideNav-link" href="">Search</a></li>
+                    <li class="position-relative"><a id="categories" class="sideNav-link" href="">Categories</a></li>
+                    <li class="position-relative"><a id="area" class="sideNav-link" href="">Area</a></li>
+                    <li class="position-relative"><a id="ingredients" class="sideNav-link" href="">Ingredients</a></li>
+                    <li class="position-relative"><a id="contact" class="sideNav-link" href="">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-footer ms-4 py-4 pe-2 text-white">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+
+                <div>
+                    <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-open py-4 text-center px-2 d-flex flex-column bg-white justify-content-between text-dark">
+            <img class="logo" src="./imgs/logo.png" alt="logo" width="50" />
+            <i class="fa-solid open-close-icon fa-bars fa-2x"></i>
+
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+
+        </div>
+    </section>
+    <!-- end sideNav section -->
+
+
+    <main>
+        <!-- start search section  -->
+        <section>
+            <div class="container-fluid w-85">
+                <div class="form row py-5 g-4" id="searchInp"></div>
+            </div>
+        </section>
+        <!-- end search section  -->
+        
+        <!-- start loading   -->
+        <div class="loading d-none">
+            <i class="fas fa-spinner fa-spin fa-5x text-white"></i>
+        </div>
+        <!-- end loading   -->
+
+        <!-- start content section  -->
+        <section>
+            <div class="min-vh-100 position-relative">
+                <div class="inner-loading position-absolute d-flex top-0 start-0 end-0 bottom-0 justify-content-center align-items-center d-none">
+                    <i class="fa fa-spinner fa-spin fa-5x"></i>
+                </div>
+
+            <div class="container-fluid w-85">
+                <div class="row py-5 g-4" id="rowData">
+
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- end content section  -->
+    </main>
+
+    <!-- jquery  -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- index js  -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
